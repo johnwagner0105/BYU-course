@@ -1,13 +1,18 @@
 function loadList(){
+    let line="";
     const links=[
         {
             label: "Week 1 notes",
             url: "week1/index.html"
+        },
+        {
+            label: "Week 2 notes",
+            url: "Week2/index.html"
         }
     ]
     links.forEach(element => {
-    document.getElementById("list").innerHTML="<li><a href='"+element.url+"'>"+element.label+"</a></li>"    
+    line=line+"<li><a href='"+element.url+"'>"+element.label+"</a></li><br>";
     });
-    
+    document.getElementById("list").innerHTML=line;
 }
 loadList();
