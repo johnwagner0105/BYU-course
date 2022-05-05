@@ -1,0 +1,72 @@
+// Variables
+$body-background-color:#49306b;
+$form-background-color:#635380;
+$input-box-color:#90708c;
+$headline-color:#ace4aa;
+$break-small: 600px;
+$break-large: 800px;
+
+
+@mixin flex-container($axis, $wrap: nowrap) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: $axis $wrap;
+    -ms-flex-flow: $axis $wrap;
+    flex-flow: $axis $wrap;
+}
+
+@mixin breakpoint($break) {
+    @if $break == small {
+    @media (max-width: $break-small) { @content; }
+    } 
+    @else if $break == large {
+    @media (min-width:$break-small) { @content; }
+    }
+    }  
+
+body {
+    //background-color: $body-background-color;
+    @include breakpoint(small) { 
+        background: green;
+        fieldset > div {
+            @include flex-container(column);        
+        }
+    }    
+    @include breakpoint(large) { 
+        background: red;
+        fieldset > div {
+            @include flex-container(row,wrap);        
+        } 
+    }
+      
+}
+
+#contactform {
+    background-color: $form-background-color;
+    input, textarea {
+        background-color: $input-box-color;
+        flex: 2;
+    }
+    label{
+        flex: 0.20;
+    }
+    @media (min-width: $break-small) {
+       & {
+          width: 90%;
+          max-width: 700px;
+          margin-left: auto;
+          margin-right: auto; 
+        } 
+    }
+    @media (min-width: $break-large) {
+        & {
+           width: 70%;
+           max-width: 900px;
+           margin-left: auto;
+           margin-right: auto; 
+         } 
+     }
+     
+}

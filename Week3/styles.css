@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+  body {
+    background: green; }
+    body fieldset > div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; } }
+@media (min-width: 600px) {
+  body {
+    background: red; }
+    body fieldset > div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+      flex-flow: row wrap; } }
+
+#contactform {
+  background-color: #635380; }
+  #contactform input, #contactform textarea {
+    background-color: #90708c;
+    flex: 2; }
+  #contactform label {
+    flex: 0.20; }
+  @media (min-width: 600px) {
+    #contactform {
+      width: 90%;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 800px) {
+    #contactform {
+      width: 70%;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+/*# sourceMappingURL=styles.css.map */
