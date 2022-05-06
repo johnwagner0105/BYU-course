@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$body-color:#333;
+$link-color:#666;
+$border-color:#d0d0d0;
+$nav-background-color:#f1f1f1;
+$link-hover-color:#00ddff;
+$link-active-color:#DEB887;
+title,h1,h2{
+    font-family: "Lora";
+}
+body {
+    color: $body-color;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.post-date {
+    border-bottom: 00.5px solid $border-color;
+    text-align: right;
+    padding-bottom: 15px;
+}
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+nav {
+    margin-bottom: 15px;
+    border-bottom: 0.5px solid $border-color;
+    border-top: 0.5px solid $border-color;
+    ul {
+        /*border: 1px solid #555;*/
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        /*width: 200px;*/
+        background-color: $nav-background-color;
+        li a {
+            display: block;
+            padding: 8px 16px;
+            &:hover {
+                color: $link-hover-color;
+            }
+            &:active {
+                color: $link-active-color;
+            }
+        }
+    }
+}
+/* Change the link color on hover */
+
+
+div{
+    padding-top: 15px;
+}
+h2{
+    margin-top: 0%;
+    padding-top: 15px;
+}
+h1 a {
+    text-decoration: none;
+    color: $body-color;
+}
+@mixin full-screen{
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    article{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+   .post-date{
+       border-right: 00.5px solid $border-color;
+       grid-column: 1;
+       border-bottom: 0px;  
+   } 
+   .post-content{
+       border-bottom: 00.5px solid $border-color;
+       grid-column: 2/4;     
+       
+   }
+}
+@media screen and (min-width: 600px){
+    @include full-screen();
+}

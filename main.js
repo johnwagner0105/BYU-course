@@ -8,6 +8,9 @@ function loadList(){
         {
             label: "Week 2 notes",
             url: "Week2/index.html"
+        },{
+            label: "Week 3 notes",
+            url:"Week3/index.html"
         }
     ]
     links.forEach(element => {
