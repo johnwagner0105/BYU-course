@@ -38,8 +38,12 @@ body {
         background: red;
         fieldset > div {
             @include flex-container(row,wrap);        
-        } 
+        }
+        
+         
+        
     }
+    
       
 }
 
@@ -47,10 +51,11 @@ body {
     background-color: $form-background-color;
     input, textarea {
         background-color: $input-box-color;
-        flex: 2;
+        display: inline-block;
     }
     label{
-        flex: 0.20;
+        width: 80px;
+        display: inline-block;
     }
     @media (min-width: $break-small) {
        & {
@@ -60,13 +65,6 @@ body {
           margin-right: auto; 
         } 
     }
-    @media (min-width: $break-large) {
-        & {
-           width: 70%;
-           max-width: 900px;
-           margin-left: auto;
-           margin-right: auto; 
-         } 
-     }
+    
      
 }

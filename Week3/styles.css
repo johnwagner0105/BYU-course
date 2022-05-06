@@ -25,19 +25,14 @@
   background-color: #635380; }
   #contactform input, #contactform textarea {
     background-color: #90708c;
-    flex: 2; }
+    display: inline-block; }
   #contactform label {
-    flex: 0.20; }
+    width: 80px;
+    display: inline-block; }
   @media (min-width: 600px) {
     #contactform {
       width: 90%;
       max-width: 700px;
-      margin-left: auto;
-      margin-right: auto; } }
-  @media (min-width: 800px) {
-    #contactform {
-      width: 70%;
-      max-width: 900px;
       margin-left: auto;
       margin-right: auto; } }
 
