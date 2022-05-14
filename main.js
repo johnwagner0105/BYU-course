@@ -11,6 +11,9 @@ function loadList(){
         },{
             label: "Week 3 notes",
             url:"Week3/index.html"
+        },{
+            label: "Week 4 notes",
+            url:"Week4/index.html"
         }
     ]
     links.forEach(element => {
