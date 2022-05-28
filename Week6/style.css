@@ -1,0 +1,93 @@
+#todoList{
+  list-style: none;
+  width: 400px;
+  padding: 0;
+}
+
+#todoList li{
+  
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+#todoList li > button{
+  flex: 0 0 40px;
+  padding: 0.5em;
+  margin-left: auto;
+  background-color: #191919;
+  color: white;
+  border: #191919;
+}
+#filterList{
+  list-style: none;
+  display: grid;
+  padding: 0;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  width: 398px;
+  border: 1px solid black;
+  margin-top: -1em;
+  
+}
+
+#filterList li{
+  padding: 1em;
+ 
+}
+
+#input{
+  padding: 0.4em;
+}
+
+#addTodo{
+  padding: 0.5em;
+  background-color: #191919;
+  color: white;
+  border: #191919;
+}
+
+.task{
+  margin-top: 2em;
+}
+
+#error{
+  font-size: 0.9em;
+  color: rgb(243, 39, 39);
+}
+
+#filterList button{
+  padding: 0.5em;
+  background-color: #191919;
+  color: white;
+  border: #191919;
+}
+
+#filterList button:active{
+  background-color: #2D4263
+}
+
+button{
+  cursor: pointer;
+}
+h1{
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+li{
+  font-size: 1.2em;
+  line-height: 2em;
+}
+a{
+  color: #172A3A;
+  font-weight: 400;
+  
+}
+a:hover{
+  color: #2D4263;
+}
+
+.exercises li{
+  list-style: none;
+}
