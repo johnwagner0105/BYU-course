@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="choosing">
+        Enter trainer name: <input id="trainer">
+        <input class="button" type="button" value="Enter trainer" onclick="show_elements('pokemon_1');" id="show_first_pokemon">
+    </div>
+    <div class="choosing" id="pokemon_1" style="visibility: hidden;" >
+        Enter Pokemon name: <input id="pokemonInput1">
+        <input type="button" onclick="getselectedPokemon('pokemonInput1');show_elements('pokemon_2');" value="Search" id="show_second_pokemon"><input type="button" onclick="getrandomPokemon();show_elements('pokemon_2');" value="Generate Random Pokemon" id="show_second_random_pokemon">
+    </div>
+    <div class="choosing" id="pokemon_2" style="visibility: hidden;">
+        Enter Pokemon name: <input id="pokemonInput2">
+        <input type="button" onclick="getselectedPokemon('pokemonInput2');show_elements('pokemon_3');" value="Search"><input type="button" onclick="getrandomPokemon();show_elements('pokemon_3');" value="Generate Random Pokemon">
+    </div>
+    <div class="choosing" id="pokemon_3" style="visibility: hidden;">
+        Enter Pokemon name: <input id="pokemonInput3">
+        <input type="button" onclick="getselectedPokemon('pokemonInput3');show_elements('pokemon_4');" value="Search"><input type="button" onclick="getrandomPokemon();show_elements('pokemon_4');" value="Generate Random Pokemon">
+    </div>
+    <div class="choosing" id="pokemon_4" style="visibility: hidden;">
+        Enter Pokemon name: <input id="pokemonInput4">
+        <input type="button" onclick="getselectedPokemon('pokemonInput4');show_elements('pokemon_5');" value="Search"><input type="button" onclick="getrandomPokemon();show_elements('pokemon_5');" value="Generate Random Pokemon">
+    </div>
+    <div class="choosing" id="pokemon_5" style="visibility: hidden;">
+        Enter Pokemon name: <input id="pokemonInput5">
+        <input type="button" onclick="getselectedPokemon('pokemonInput5');show_elements('pokemon_6');" value="Search"><input type="button" onclick="getrandomPokemon();show_elements('pokemon_6');" value="Generate Random Pokemon">
+    </div>
+    <div class="choosing" id="pokemon_6" style="visibility: hidden;">
+        Enter Pokemon name: <input id="pokemonInput6">
+        <input type="button" onclick="getselectedPokemon('pokemonInput6')" value="Search"><input type="button" onclick="getrandomPokemon()" value="Generate Random Pokemon">
+    </div>
+    <div class="container"></div>
+     <script src="project.js"></script>
+     </div>
+     <input type="button" id="save" value="save" onclick="save_trainer()">
+</body>
+</html>

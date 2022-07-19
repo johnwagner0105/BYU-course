@@ -26,6 +26,8 @@ function loadList(){
         url:"Week9/index.html"
         },{label: "Week 10 notes",
         url:"Week10/index.html"
+        },{label: "Final Project",
+        url:"Final_Project/index.html"
         }
     ]
     links.forEach(element => {
